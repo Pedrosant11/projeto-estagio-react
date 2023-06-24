@@ -1,0 +1,84 @@
+body{
+  background-color: #282c34;
+}
+
+.App-header {
+  background-color: #21242b;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+  padding: 10px;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+.games-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+.genre-select {
+  min-width: 100px;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #9E0303;
+  font-weight: bold;
+}
+
+/* .game-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.game-card h3 {
+  margin-top: 10px;
+}
+
+.game-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+*/
+@media (max-width: 768px) {
+  .games-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .games-list {
+    grid-template-columns: 1fr;
+  }
+} 
+
+.game-title {
+  text-align: center;
+  font-weight: 900;
+}
+
+.MuiInputBase-root {
+  background-color: white;
+  margin: 12px 0 8px 0;
+}
+
+.MuiFormLabel-root.MuiInputLabel-root{
+  color: white;
+}
+
