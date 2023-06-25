@@ -15,6 +15,14 @@ body{
   padding: 10px;
 }
 
+.App-header .title-logo {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  font-size: 30px;
+}
+
 .body {
   display: flex;
   justify-content: center;

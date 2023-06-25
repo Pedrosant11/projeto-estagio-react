@@ -23,7 +23,7 @@ export default function GenreSelect({genres, onChange}) {
           label=""
           onChange={handleChange}
         >
-            <MenuItem value='all'>Todos</MenuItem>
+            <MenuItem value='all'>All</MenuItem>
             {genres.map((genre)=>(
                 <MenuItem key={genre} value={genre}>{genre}</MenuItem>
             ))}

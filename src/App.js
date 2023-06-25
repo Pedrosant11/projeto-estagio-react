@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import './App.css';
 
 import SearchBar from './components/search-bar';
@@ -87,6 +88,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <SportsEsportsIcon sx={{ fontSize: 40 }} color="primary"/>
         <SearchBar onChange={(e) => setSearchTerm(e.target.value)}/>
         <GenreSelect onChange={setSelectedGenre} genres={allGenres}/>
         </header>
