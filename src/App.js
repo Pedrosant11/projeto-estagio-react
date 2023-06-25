@@ -33,6 +33,8 @@ function App() {
         setError('O servidor demorou para responder, tente mais tarde')
       }, 5000)  
   
+      setLoading(false);
+
       const response = await fetch('https://games-test-api-81e9fb0d564a.herokuapp.com/api/data/', {
         headers, 
         signal: controller.signal
