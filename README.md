@@ -11,4 +11,5 @@ Após isso, dê o comando para iniciar o servidor:
 ```
 npm start
 ```
-
+Print:
+[<img src="https://imgur.com/xC4u8Aj" alt="Lista de jogos"/>]
