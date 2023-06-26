@@ -39,7 +39,7 @@ function App() {
       });
 
       clearTimeout(timeoutId);
-      setLoading(false);
+      
 
       if (!response.ok) {
         handleFetchError(response.status)
@@ -57,9 +57,9 @@ function App() {
         setGames([]);
       }
 
-
+      setLoading(false);
     } catch (error) {
-      setError('O servidor não conseguiu responder por agora, tente novamente mais tarde');
+      setLoading(false);
   }
 };
 
@@ -78,7 +78,7 @@ function App() {
     const filteredGames = games.filter((game) => {
       if (selectedGenre !== 'all') {
         return game.title.toLowerCase().includes(searchTerm.toLowerCase()) &&
-              game.genre == selectedGenre
+              game.genre === selectedGenre
       } 
       return game.title.toLowerCase().includes(searchTerm.toLowerCase())
     }
