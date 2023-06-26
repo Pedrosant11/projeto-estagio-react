@@ -13,3 +13,5 @@ npm start
 ```
 Print:
 <img src="https://i.imgur.com/xC4u8Aj.jpeg" alt="Lista de jogos"/>
+
+Link do deploy: https://game-list-six.vercel.app/
