@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500);
+body,
+html {
+  margin: 0;
+}
+
+input {
+  border: none;
+}
+
+form {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.background-register {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(6, 16, 31), rgba(6, 16, 31, 0.7), rgba(6, 16, 31, 0.2), rgba(6, 16, 31, 0)), linear-gradient(rgba(6, 16, 31, 0), rgba(6, 16, 31, 0), rgba(6, 16, 31, 0.2), rgb(6, 16, 31)), url(./../../images/2019-01-28-red-dead-redemption-4k-2-eu.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 50vh;
+    margin-left: 35px;
+}
+
+.welcome {
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.alert-mensage {
+    color: #FC8181;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+input {
+    margin-bottom: 15px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 50px;
+    text-indent: 15px;
+}
+
+.register-button {
+    background: none;
+    border: 2px solid #17d12f;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+  }
+  
+.register-button:hover {
+    background: none;
+    border: 2px solid #119423;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.have-account {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+

@@ -1,38 +1,131 @@
-body{
-  background-color: #282c34;
+html,
+body,
+#root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #06101f;
+}
+
+.App {
+  /* background-image: linear-gradient(to right, rgb(6, 16, 31), rgba(6, 16, 31, 0.7), rgba(6, 16, 31, 0.2), rgba(6, 16, 31, 0)), linear-gradient(rgba(6, 16, 31, 0), rgba(6, 16, 31, 0), rgba(6, 16, 31, 0.2), rgb(6, 16, 31)); 
+  height: 65vh;  */
+  width: 100%;
+}
+
+.Header-container {
+  background-image: linear-gradient(to right, rgb(6, 16, 31), rgba(6, 16, 31, 0.7), rgba(6, 16, 31, 0.2), rgba(6, 16, 31, 0)), linear-gradient(rgba(6, 16, 31, 0), rgba(6, 16, 31, 0), rgba(6, 16, 31, 0.2), rgb(6, 16, 31)), url("https://images.igdb.com/igdb/image/upload/t_screenshot_huge_2x/oj4qjm8uxbpbrcnxsu93.jpg");
+  height: 85vh;
+  width: 100%;
+  background-size: cover;
+  background-position-y: 50%;
 }
 
 .App-header {
-  background-color: #21242b;
-  height: 100px;
-  width: 100%;
   display: flex;
-  gap: 20px;
-  align-items: center;
   justify-content: center;
-  position: fixed;
-  z-index: 2;
-  padding: 10px;
+  margin-top: 50vh;
 }
 
-.App-header .title-logo {
+.Nav-top {
   display: flex;
-  flex-direction: column;
-  color: white;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
   align-items: center;
+}
+
+.Nav-top .Logo-icon{
+  color: #4A8AF0;
+  font-size: 50px;
+}
+
+.Nav-bar {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.Logo-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: #4A8AF0;
+}
+
+.game-logo {
   font-size: 30px;
+  font-style: italic;
+}
+
+.list-logo {
+  font-size: 20px;
+}
+
+.logout-button {
+  background-color: rgba(27, 37, 58, 0.75);
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+}
+
+.logout-button:hover {
+  background-color: rgba(37, 50, 78, 0.75);
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.login {
+  background-color: rgba(27, 37, 58, 0.75);
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+}
+
+.login:hover {
+  background-color: rgba(27, 37, 58, 0.75);
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+}
+
+.favorites {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
 }
 
 .body {
   display: flex;
   justify-content: center;
-  padding-top: 150px;
 }
 
 .games-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
+  grid-gap: 30px;
 }
 
 .genre-select {
@@ -47,17 +140,116 @@ body{
   font-weight: bold;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1300px) {
   .games-list {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .App-header {
+    margin-top: 30vh;
+  }
+
+  .Nav-top {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Logo-name {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-logo {
+    font-size: 24px;
+  }
+
+  .list-logo {
+    font-size: 16px;
+  }
+
+  .logout-button,
+  .login,
+  .favorites {
+    font-size: 14px;
+  }
+
+  .App-header .Nav-bar {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .error-container {
+    text-align: center;
+  }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 800px) {
   .games-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
   }
-} 
+
+  .App-header {
+    margin-top: 30vh;
+  }
+
+  .Nav-top {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Logo-name {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-logo {
+    font-size: 24px;
+  }
+
+  .list-logo {
+    font-size: 16px;
+  }
+
+  .logout-button,
+  .login,
+  .favorites {
+    font-size: 14px;
+  }
+
+  .App-header .Nav-bar {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .error-container {
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .App-header {
+    margin-top: 20vh;
+  }
+
+  .game-logo {
+    font-size: 20px;
+  }
+
+  .list-logo {
+    font-size: 14px;
+  }
+
+  .logout-button,
+  .login,
+  .favorites {
+    font-size: 12px;
+  }
+
+  .input-login-register {
+    width: 300px;
+  }
+  
+}
 
 .game-title {
   text-align: center;

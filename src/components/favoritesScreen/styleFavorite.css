@@ -1,0 +1,10 @@
+.login-favorites {
+    color: #fff;
+    font-size: 30px;
+}
+
+.login-favorites-link {
+    color: green;
+    cursor: pointer;
+    font-weight: bold;
+}
