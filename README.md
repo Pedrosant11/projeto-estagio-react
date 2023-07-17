@@ -56,10 +56,10 @@ Projeto desafio em React para o estágio na App Masters
 - Publicar seu projeto online para testarmos (na mesma url de antes)
 
 Print:
-<img src="https://imgur.com/T8Utwy0" alt="Lista de jogos"/>
-<img src="https://imgur.com/s5i4HIW" alt="Lista de jogos"/>
-<img src="https://imgur.com/EtoGAaz" alt="Lista de jogos"/>
-<img src="https://imgur.com/L7QShMk" alt="Lista de jogos"/>
+<img src="https://i.imgur.com/T8Utwy0.png" alt="Lista de jogos"/>
+<img src="https://i.imgur.com/s5i4HIW.png" alt="Lista de jogos"/>
+<img src="https://i.imgur.com/EtoGAaz.png" alt="Lista de jogos"/>
+<img src="https://i.imgur.com/L7QShMk.png" alt="Lista de jogos"/>
 
 # Start
 No diretório do projeto, abra o terminal e aplique o comando para instalar as dependências:
